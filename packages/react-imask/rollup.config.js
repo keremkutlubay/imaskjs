@@ -42,15 +42,15 @@ export default [
   },
   {
     input: ['src/**/*.ts'],
-    external: [...Object.keys(globals), 'imask/esm', 'imask/esm/imask'],
+    external: [...Object.keys(globals), 'imask-t2/esm', 'imask-t2/esm/imask'],
     output: {
       format: 'esm',
       dir: 'esm',
     },
     plugins: [
       replace({
-        "from 'imask'": "from 'imask/esm/imask'",
-        "import 'imask'": "import 'imask/esm'",
+        "from 'imask-t2'": "from 'imask-t2/esm/imask'",
+        "import 'imask-t2'": "import 'imask-t2/esm'",
         delimiters: ['', ''],
       }),
       multi(),

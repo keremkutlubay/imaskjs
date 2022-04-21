@@ -1,14 +1,15 @@
 {
-  "name": "react-imask",
+  "name": "react-imask-t2",
   "author": "Alexey Kryazhev",
+  "publisher": "Kerem Kutlubay",
   "license": "MIT",
-  "version": "6.4.2",
+  "version": "1.0.0",
   "homepage": "https://imask.js.org/",
   "description": "React input mask",
   "main": "dist/react-imask.js",
   "module": "esm/index.js",
   "types": "dist/index.d.ts",
-  "repository": "https://github.com/uNmAnNeR/imaskjs/tree/master/packages/react-imask",
+  "repository": "https://github.com/keremkutlubay/imaskjs/tree/master/packages/react-imask",
   "scripts": {
     "build": "tsc --emitDeclarationOnly && rollup -c",
     "watch": "rollup -c -w"
@@ -20,10 +21,11 @@
     "mask"
   ],
   "dependencies": {
-    "imask": "^6.4.2",
+    "imask-t2": "^1.0.0",
     "prop-types": "^15.7.2"
   },
   "peerDependencies": {
+    "antd":"4.19.5",
     "react": ">=0.14.0"
   },
   "engines": {

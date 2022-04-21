@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import IMask from 'imask';
+import IMask from 'imask-t2';
 
 
 export
