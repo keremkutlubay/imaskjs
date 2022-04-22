@@ -1,4 +1,4 @@
-import IMask from 'imask-t2';
+import IMask from 'imaskt2';
 import { useEffect, useCallback, useState, useRef, Dispatch } from 'react';
 import type { MutableRefObject } from 'react';
 import type { ReactMaskProps, Falsy, ReactElement } from './mixin';

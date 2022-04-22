@@ -1,5 +1,5 @@
 import React from 'react';
-import IMask from 'imask-t2';
+import IMask from 'imaskt2';
 import IMaskMixin, { IMaskInputProps, Falsy, ReactElement } from './mixin';
 
 

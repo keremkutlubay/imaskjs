@@ -1,5 +1,5 @@
 {
-  "name": "imask-t2",
+  "name": "imaskt2",
   "version": "1.0.0",
   "author": "Alexey Kryazhev",
   "publisher": "Kerem Kutlubay",
@@ -7,7 +7,7 @@
   "bugs": "",
   "homepage": "https://imask.js.org/",
   "description": "vanilla javascript input mask",
-  "main": "dist/imask.js",
+  "main": "dist/imaskt2.js",
   "module": "esm/index.js",
   "repository": "https://github.com/keremkutlubay/imaskjs",
   "types": "index.d.ts",

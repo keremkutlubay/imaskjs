@@ -21,9 +21,9 @@ export default [
   ...[false, true].map(min => ({
     input: 'src/index.js',
     output: {
-      file: `dist/imask${min ? '.min' : ''}.js`,
+      file: `dist/imaskt2${min ? '.min' : ''}.js`,
       format: 'umd',
-      name: 'IMask',
+      name: 'imaskt2',
       sourcemap: true,
     },
     plugins: [
@@ -45,7 +45,7 @@ export default [
       ...commonPlugins,
       copy({
         targets: [
-          { src: 'index.d.ts', dest: 'esm', rename: 'imask.d.ts' },
+          { src: 'index.d.ts', dest: 'esm', rename: 'imaskt2.d.ts' },
         ]
       })
     ]

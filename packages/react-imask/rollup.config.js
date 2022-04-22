@@ -10,7 +10,7 @@ import copy from 'rollup-plugin-copy';
 
 const globals = {
   react: 'React',
-  imask: 'IMask',
+  'imaskt2': 'imaskt2',
   'prop-types': 'PropTypes',
 };
 
@@ -42,15 +42,15 @@ export default [
   },
   {
     input: ['src/**/*.ts'],
-    external: [...Object.keys(globals), 'imask-t2/esm', 'imask-t2/esm/imask'],
+    external: [...Object.keys(globals), 'imaskt2/esm', 'imaskt2/esm/imask'],
     output: {
       format: 'esm',
       dir: 'esm',
     },
     plugins: [
       replace({
-        "from 'imask-t2'": "from 'imask-t2/esm/imask'",
-        "import 'imask-t2'": "import 'imask-t2/esm'",
+        "from 'imaskt2'": "from 'imaskt2/esm/imask'",
+        "import 'imaskt2'": "import 'imaskt2/esm'",
         delimiters: ['', ''],
       }),
       multi(),
@@ -60,7 +60,7 @@ export default [
       copy({
         targets: [
           { src: 'dist/*.d.ts', dest: 'esm' },
-          { src: 'dist/index.d.ts', dest: 'dist', rename: 'react-imask.d.ts' },
+          { src: 'dist/index.d.ts', dest: 'dist', rename: 'react-imaskt2.d.ts' },
         ]
       })
     ]
