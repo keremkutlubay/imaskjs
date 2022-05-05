@@ -327,7 +327,6 @@ export default class InputMask {
   /** Handles view input event */
   _onInput(e: InputEvent): void {
     this._inputEvent = e;
-    e.newValue=e.newValue.toUpperCase();
 
     this._abortUpdateCursor();
 
