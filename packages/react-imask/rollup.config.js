@@ -10,7 +10,7 @@ import copy from 'rollup-plugin-copy';
 
 const globals = {
   react: 'React',
-  'imaskt2': 'imaskt2',
+  imask: 'IMask',
   'prop-types': 'PropTypes',
 };
 
