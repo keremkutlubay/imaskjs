@@ -24,6 +24,7 @@ type ReactMaskProps<
 > = {
   onAccept?: (value: Value, maskRef: IMask.InputMask<Opts>, e?: InputEvent) => void;
   onComplete?: (value: Value, maskRef: IMask.InputMask<Opts>, e?: InputEvent) => void;
+  inputCapitalize?:boolean,
   unmask?: Unmask;
   value?: Value;
   inputRef?: React.RefCallback<MaskElement>;
@@ -44,6 +45,7 @@ const MASK_PROPS: { [key in keyof (IMask.AllMaskedOptions & ReactMaskProps)]: un
     PropTypes.instanceOf(IMask.Masked),
   ]),
   value: PropTypes.any,
+  inputCapitalize: PropTypes.bool,
   unmask: PropTypes.oneOfType([
     PropTypes.bool,
     PropTypes.oneOf(['typed']),
@@ -56,6 +58,8 @@ const MASK_PROPS: { [key in keyof (IMask.AllMaskedOptions & ReactMaskProps)]: un
     PropTypes.oneOf(['shift']),
   ]),
   eager: PropTypes.bool,
+  
+  
 
   // events
   onAccept: PropTypes.func,

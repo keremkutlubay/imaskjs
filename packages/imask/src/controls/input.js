@@ -9,6 +9,7 @@ import MaskElement from "./mask-element.js";
 import HTMLMaskElement from "./html-mask-element.js";
 import HTMLContenteditableMaskElement from "./html-contenteditable-mask-element.js";
 import IMask from "../core/holder.js";
+import props from "../../../vue-imask/src/props.js";
 
 /** Listens to element events and controls changes between element and {@link Masked} */
 export default class InputMask {
@@ -333,7 +334,7 @@ export default class InputMask {
     // fix strange IE behavior
     if (!this._selection) return this.updateValue();
     var elementValue = this.el.value;
-    if(this.el.input.autocapitalize){
+    if(this.masked.inputCapitalize){
         elementValue = elementValue.toUpperCase();
     }
 
